@@ -8,7 +8,7 @@ const systemsInState = (state) =>
   R.pipe(
     R.prop('systems'),
     R.values,
-    R.filter((s) => s.state == state),
+    R.filter((s) => s.state == state && !s.sabotaged),
   )
 
 const groupByQueue = R.reduce(

@@ -11,31 +11,31 @@ export default class App extends React.Component {
 
     this.state = {
       systems: {
-        "mon-calamari": { name: "Mon Calamari", state: 1, queue: 3, units: ["t-b", "s-b"] },
-        "felucia": { name: "Felucia", state: 1, queue: 1, units: ["t-y"] },
-        "mygeeto": { name: "Mygeeto", state: 1, queue: 2, units: ["t-b", "s-y"] },
-        "kessel": { name: "Kessel", state: 1, queue: 1, units: ["t-y"] },
-        "saleucami": { name: "Saleucami", state: 1, queue: 1, units: ["c-y"] },
-        "mandalore": { name: "Mandalore", state: 1, queue: 1, units: ["t-y", "t-b"] },
-        "ord-mantell": { name: "Ord Mantell", state: 1, queue: 2, units: ["c-b", "c-y"] },
-        "mal-hutta": { name: "Mal Hutta", state: 1, queue: 1, units: ["t-y", "t-b"] },
-        "toydaria": { name: "Toydaria", state: 1, queue: 2, units: ["c-b"] },
-        "kashyyk": { name: "Kashyyk", state: 1, queue: 1, units: ["t-y", "t-y"] },
-        "alderaan": { name: "Alderaan", state: 1, queue: 1, units: ["t-y"] },
-        "bothawui": { name: "Bothawui", state: 1, queue: 1, units: ["c-y"] },
-        "malastare": { name: "Malastare", state: 1, queue: 1, units: ["t-y"] },
-        "cato-neimoidia": { name: "Cato Neimoidia", state: 1, queue: 2, units: ["t-b", "c-y"] },
-        "coruscant": { name: "Coruscant", state: 3, queue: 3, units: ["t-y"], hidden: true },
-        "rodia": { name: "Rodia", state: 1, queue: 1, units: ["t-y"] },
-        "naboo": { name: "Naboo", state: 1, queue: 1, units: ["t-y", "t-b"] },
-        "sullust": { name: "Sullust", state: 1, queue: 2, units: ["t-y", "s-y"] },
-        "corellia": { name: "Corellia", state: 1, queue: 3, units: ["c-b", "s-b"] },
-        "geonosis": { name: "Geonosis", state: 1, queue: 2, units: ["t-b", "s-y"] },
-        "ryloth": { name: "Ryloth", state: 1, queue: 1, units: ["t-y"] },
-        "utapau": { name: "Utapau", state: 1, queue: 3, units: ["c-b", "s-b"] },
-        "mustafar": { name: "Mustafar", state: 1, queue: 2, units: ["t-b", "c-b"] },
-        "bespin": { name: "Bespin", state: 1, queue: 1, units: ["c-y"] },
-        "rebel-base": { name: "", state: 0, queue: 1, units: ["t-b", "t-y"], hidden: true },
+        "mon-calamari": { name: "Mon Calamari", state: 1, queue: 3, sabotaged: false, units: ["t-b", "s-b"] },
+        "felucia": { name: "Felucia", state: 1, queue: 1, sabotaged: false, units: ["t-y"] },
+        "mygeeto": { name: "Mygeeto", state: 1, queue: 2, sabotaged: false, units: ["t-b", "s-y"] },
+        "kessel": { name: "Kessel", state: 1, queue: 1, sabotaged: false, units: ["t-y"] },
+        "saleucami": { name: "Saleucami", state: 1, queue: 1, sabotaged: false, units: ["c-y"] },
+        "mandalore": { name: "Mandalore", state: 1, queue: 1, sabotaged: false, units: ["t-y", "t-b"] },
+        "ord-mantell": { name: "Ord Mantell", state: 1, queue: 2, sabotaged: false, units: ["c-b", "c-y"] },
+        "mal-hutta": { name: "Mal Hutta", state: 1, queue: 1, sabotaged: false, units: ["t-y", "t-b"] },
+        "toydaria": { name: "Toydaria", state: 1, queue: 2, sabotaged: false, units: ["c-b"] },
+        "kashyyk": { name: "Kashyyk", state: 1, queue: 1, sabotaged: false, units: ["t-y", "t-y"] },
+        "alderaan": { name: "Alderaan", state: 1, queue: 1, sabotaged: false, units: ["t-y"] },
+        "bothawui": { name: "Bothawui", state: 1, queue: 1, sabotaged: false, units: ["c-y"] },
+        "malastare": { name: "Malastare", state: 1, queue: 1, sabotaged: false, units: ["t-y"] },
+        "cato-neimoidia": { name: "Cato Neimoidia", state: 1, queue: 2, sabotaged: false, units: ["t-b", "c-y"] },
+        "coruscant": { name: "Coruscant", state: 3, queue: 3, sabotaged: false, units: ["t-y"], hidden: true },
+        "rodia": { name: "Rodia", state: 1, queue: 1, sabotaged: false, units: ["t-y"] },
+        "naboo": { name: "Naboo", state: 1, queue: 1, sabotaged: false, units: ["t-y", "t-b"] },
+        "sullust": { name: "Sullust", state: 1, queue: 2, sabotaged: false, units: ["t-y", "s-y"] },
+        "corellia": { name: "Corellia", state: 1, queue: 3, sabotaged: false, units: ["c-b", "s-b"] },
+        "geonosis": { name: "Geonosis", state: 1, queue: 2, sabotaged: false, units: ["t-b", "s-y"] },
+        "ryloth": { name: "Ryloth", state: 1, queue: 1, sabotaged: false, units: ["t-y"] },
+        "utapau": { name: "Utapau", state: 1, queue: 3, sabotaged: false, units: ["c-b", "s-b"] },
+        "mustafar": { name: "Mustafar", state: 1, queue: 2, sabotaged: false, units: ["t-b", "c-b"] },
+        "bespin": { name: "Bespin", state: 1, queue: 1, sabotaged: false, units: ["c-y"] },
+        "rebel-base": { name: "", state: 0, queue: 1, sabotaged: false, units: ["t-b", "t-y"], hidden: true },
       },
       units: {
         rebellion: {
@@ -62,9 +62,18 @@ export default class App extends React.Component {
     this.setState(R.assocPath(['systems', systemId, 'state'], state, this.state))
   }
 
+  onToggleSabotaged(systemId) {
+    this.setState(
+      R.assocPath(
+        ['systems', systemId, 'sabotaged'],
+        !R.path(['systems', systemId, 'sabotaged'], this.state),
+        this.state
+      )
+    )
+  }
+
   render() {
     const { systems } = this.state;
-
 
     const _systems = [];
 
@@ -76,7 +85,9 @@ export default class App extends React.Component {
             id={id}
             name={systems[id].name}
             owner={systems[id].state}
-            onChange={this.onChangeOwner.bind(this)}/>
+            sabotaged={systems[id].sabotaged}
+            onChangeOwner={this.onChangeOwner.bind(this)}
+            onToggleSabotaged={this.onToggleSabotaged.bind(this)} />
         );
       }
     }
